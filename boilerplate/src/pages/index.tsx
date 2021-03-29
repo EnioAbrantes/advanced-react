@@ -2,10 +2,12 @@ import Head from 'next/head'
 import styles from './styles/Home.module.css'
 
 type Props = {
-  title: string;
-};
+  title: string
+}
 
-export default function Home( { title = 'React avançado' }: Props) {
+const en = 'bla'
+
+export default function Home({ title = 'React avançado' }: Props) {
   return (
     <div className={styles.container}>
       <Head>
@@ -14,9 +16,7 @@ export default function Home( { title = 'React avançado' }: Props) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          {title}
-        </h1>
+        <h1 className={styles.title}>{title}</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
